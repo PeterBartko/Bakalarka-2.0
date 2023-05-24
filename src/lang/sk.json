@@ -1,0 +1,91 @@
+{
+  "about": {
+    "createAccount": "Vytvoriť účet",
+    "hero1": "Ovladajte zavlažovanie",
+    "hero2": "jednoducho odkiaľkoľvek"
+  },
+  "footer": {
+    "bc": "Bakalársky projekt",
+    "created": "Vytvoril"
+  },
+  "forgot": {
+    "enterEmail": "Zadajte váš email",
+    "enterEmailOr": "Zadajte email od účtu alebo",
+    "login": "sa prihláste",
+    "msg": "Email bol odoslany!",
+    "reset": "Obnoviť"
+  },
+  "home": {
+    "addZone": "Pridať zónu",
+    "noZone": "Nemáte aktívnu žiadnu zónu"
+  },
+  "login": {
+    "forgotPassword": "Zabudli ste heslo ?",
+    "logViaGoogle": "Prihlásiť cez Google",
+    "login": "Prihlásenie",
+    "noAccount": "Nemaš účet ?",
+    "password": "Heslo",
+    "register": "zaregistrujte sa"
+  },
+  "navbar": {
+    "darkmode": "Tmavý režim",
+    "en": "Angličtina",
+    "langChange": "Zmena jazyka",
+    "lightmode": "Svetlý režim",
+    "login": "Prihlásiť sa",
+    "settings": "Nastavenia",
+    "signout": "Odhlásiť sa",
+    "sk": "Slovenčina"
+  },
+  "register": {
+    "alreadyAccount": "Už máš účet ?",
+    "enterEmail": "Zadajte váš e-mail",
+    "enterName": "Zadajte váše meno",
+    "enterPassword": "Zadajte váše heslo",
+    "name": "Meno",
+    "register": "Registrácia",
+    "signViaGoogle": "Registrovať cez Google"
+  },
+  "selectCity": {
+    "chooseCity": "Zvolte si mesto",
+    "city": "Mesto",
+    "msg": "Meno bolo úspešne zmenene",
+    "newName": "Nové použivatelské meno:",
+    "selected": "zolene:",
+    "whereIrrigation": "kde sa zavlažovací systém nachádza"
+  },
+  "weather": {
+    "clear": "Slnečno",
+    "clouds": "Oblačno",
+    "drizzle": "Mrholenie",
+    "fog": "Hmla",
+    "rain": "Dážď",
+    "snow": "Sneženie",
+    "thunderstorm": "Búrka"
+  },
+  "zone": {
+    "add": "Pridať",
+    "bg": "Pozadie",
+    "cancel": "Zrušiť",
+    "days": {
+      "fr": "Pi",
+      "mo": "Po",
+      "sa": "So",
+      "su": "Ne",
+      "th": "Št",
+      "tu": "Ut",
+      "we": "St"
+    },
+    "delete": "Odstraniť",
+    "err1": "Zadajte názov a pridajte postrekovače",
+    "err2": "Zadajte názov",
+    "from": "Od",
+    "name": "Názov",
+    "save": "Uložiť",
+    "scheduler": "Plánovač",
+    "start": "Spustiť",
+    "stop": "Zastaviť",
+    "to": "Do",
+    "zone2": "Zónu"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "about": {
+    "createAccount": "Create account",
+    "hero1": "Control irrigation",
+    "hero2": "easily from anywhere"
+  },
+  "footer": {
+    "bc": "Bachelor project",
+    "created": " Created by"
+  },
+  "forgot": {
+    "enterEmail": "Enter your email",
+    "enterEmailOr": "Enter your account email or",
+    "login": "log in",
+    "msg": "Email has been sent!",
+    "reset": "Reset"
+  },
+  "home": {
+    "addZone": "Add zone",
+    "noZone": "You have no active zone"
+  },
+  "login": {
+    "forgotPassword": "Forgot your password ?",
+    "logViaGoogle": "Log in with Google",
+    "login": "Login",
+    "noAccount": "You don't have an account ?",
+    "password": "Password",
+    "register": "register now"
+  },
+  "navbar": {
+    "darkmode": "Dark mode",
+    "en": "English",
+    "langChange": "Language change",
+    "lightmode": "Light mode",
+    "login": "Login",
+    "settings": "Settings",
+    "signout": "Sign out",
+    "sk": "Slovak"
+  },
+  "register": {
+    "alreadyAccount": "Already got an account?",
+    "enterEmail": "Enter your email",
+    "enterName": "Enter your name",
+    "enterPassword": "Enter your password",
+    "name": "Name",
+    "register": "Register",
+    "signViaGoogle": "Sign up with Google"
+  },
+  "selectCity": {
+    "chooseCity": "Choose your city",
+    "city": "City",
+    "msg": "Name has been successfully changed",
+    "newName": "New username:",
+    "selected": "selected:",
+    "whereIrrigation": "where the irrigation system is located"
+  },
+  "weather": {
+    "clear": "Clear",
+    "clouds": "Clouds",
+    "drizzle": "Drizzle",
+    "fog": "Fog",
+    "rain": "Rain",
+    "snow": "Snow",
+    "thunderstorm": "Thunderstorm"
+  },
+  "zone": {
+    "add": "Add",
+    "bg": "Background",
+    "cancel": "Cancel",
+    "days": {
+      "fr": "Fr",
+      "mo": "Mo",
+      "sa": "Sa",
+      "su": "Su",
+      "th": "Th",
+      "tu": "Tu",
+      "we": "We"
+    },
+    "delete": "Delete",
+    "err1": "Enter name and add some sprinklers",
+    "err2": "Enter a name",
+    "from": "From",
+    "name": "Name",
+    "save": "Save",
+    "scheduler": "Scheduler",
+    "start": "Start",
+    "stop": "Stop",
+    "to": "To",
+    "zone2": "Zone"
+  }
+}
