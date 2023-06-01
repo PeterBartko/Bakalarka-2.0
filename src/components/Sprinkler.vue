@@ -56,11 +56,6 @@ const handleLight = async () => {
 				<h3 class="truncate w-[233px] gap-2 mr-3">
 					{{ data.nazov }}
 				</h3>
-				<!--				<h3 class="flex items-center w-[150px] gap-2">-->
-				<!--					<p class="font-bold">-->
-				<!--						IP:-->
-				<!--					</p> {{ data.ip }}-->
-				<!--				</h3>-->
 			</div>
 			<button v-show="zoneId" @click="show_update = !show_update">
 				<img src="@/assets/icons/options.svg" alt="nastavenia" class="invert dark:invert-0">
@@ -70,12 +65,6 @@ const handleLight = async () => {
 			<div class="flex flex-col w-full p-1 xs:p-0 xs:w-[unset] xs:flex-row gap-2 m-1">
 				<label for="newNazov">{{ $t('zone.name') }}</label>
 				<input id="newNazov" v-model="newNazov" type="text" :placeholder="data.nazov" class="!w-full indent-2 dark:text-black rounded">
-				<!--				<div class="flex gap-2">-->
-				<!--					<p class="xs:hidden leading-6 dark:text-white text-[1rem]">-->
-				<!--						IP:-->
-				<!--					</p>-->
-				<!--					<InputIP :o-gip="data.ip" @ip="validateIP" />-->
-				<!--				</div>-->
 			</div>
 			<div class="w-full flex justify-between gap-1 p-1">
 				<button class="btn p-1 px-2" @click="update">

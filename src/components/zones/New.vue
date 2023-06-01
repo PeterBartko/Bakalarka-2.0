@@ -14,6 +14,7 @@ const newZone = reactive<Zone>({
 	id: Math.random().toString(36).slice(2),
 	nazov: t('zone.name'),
 	sprinklers: [],
+	last_started: 0,
 	cas: { od: '', do: '' },
 	days: [
 		false,

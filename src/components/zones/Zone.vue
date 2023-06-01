@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { onMounted, PropType, ref } from 'vue';
+import { computed, onMounted, PropType, ref } from 'vue';
 import Options from '@/components/zones/Options.vue';
 import Timer from '@/components/zones/Timer.vue';
-import { Zone } from '@/store/user';
+import moment from 'moment-with-locales-es6';
+import { useUserStore, Zone } from '@/store/user';
+import { i18n } from '@/lang';
 
 const props = defineProps({
 	zone: {
@@ -10,6 +12,8 @@ const props = defineProps({
 		required: true,
 	},
 });
+
+const { t } = i18n.global;
 
 const bg = ref();
 const showOptions = ref(false);
@@ -29,10 +33,16 @@ const options = () => {
 	}
 };
 
+const userStore = useUserStore();
+
 const spustenie = () => {
 	if (!mins.value) {
 		return;
 	}
+
+	userStore.zones = userStore.zones.map(z => z.id === props.zone.id ? ({ ...z, last_started: Date.now() }) : z);
+	console.log(userStore.zones);
+	userStore.saveToDB('data');
 
 	showBtn.value = true;
 	secs.value = mins.value * 60;
@@ -89,6 +99,8 @@ onMounted(() => {
 		bg.value.style.background = randGBG();
 	}
 });
+
+const lastStarted = computed(() => props?.zone?.last_started > 0 ? moment(props?.zone?.last_started).locale(i18n.global.locale).fromNow() : t('zone.never'));
 </script>
 
 <template>
@@ -101,7 +113,7 @@ onMounted(() => {
 			</div>
 			<header>
 				<button v-show="!showOptions && !showCasovac" class="absolute top-1 right-1" @click="options">
-					<img src="../../assets/icons/options.svg" alt="">
+					<img src="@/assets/icons/options.svg" alt="">
 				</button>
 			</header>
 			<h2 v-show="!showOptions" class="font-bold mt-2 ml-1 text-2xl">
@@ -111,9 +123,9 @@ onMounted(() => {
 			<Timer v-if="showCasovac" :zone="zone" @toggle-cas="showCasovac = false" />
 			<Options v-if="showOptions" :zone="zone" @toggle-opt="showOptions = false" @tmpURL="tmpURL" />
 
-			<p v-show="!showOptions && !showCasovac" class="pl-2 font-bold">
-				{{ zone.cas.od }} {{ zone.cas.od ? '-' : '' }} {{ zone.cas.do }}
-			</p>
+			<span v-show="!showOptions && !showCasovac" class="pl-1 font-bold">
+				{{ $t('zone.last') }} {{ lastStarted }}
+			</span>
 
 			<footer v-show="!showOptions && !showCasovac" class="flex items-center absolute bottom-[5px] px-[5px] w-full">
 				<button v-show="!showBtn" class="btn py-1 px-2" @click="spustenie">

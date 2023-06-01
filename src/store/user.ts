@@ -24,6 +24,7 @@ export type Zone = {
 		id: string;
 	}>;
 	days: boolean[];
+	last_started: number;
 };
 
 export type UserStore = {

@@ -15,6 +15,8 @@
     "@vueuse/core": "^10.0.2",
     "element-plus": "^2.3.3",
     "firebase": "^9.19.1",
+    "moment": "^2.29.4",
+    "moment-with-locales-es6": "^1.0.1",
     "pinia": "^2.0.34",
     "vue": "^3.2.47",
     "vue-i18n": "^9.2.2",
